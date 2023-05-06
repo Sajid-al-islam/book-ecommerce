@@ -968,15 +968,19 @@ body {
     display: inline-block;
     margin-right: 0px;
     position: relative;
+}
+
+.menu-area ul >li {
     border-left: 1px solid #c1c1c1;
 }
 .menu-area ul li:last-child {
     display: inline-block;
     margin-right: 0px;
     position: relative;
+}
+.menu-area ul >li:last-child {
     border-right: 1px solid #c1c1c1;
 }
-
 .menu-area ul li>a,
 .safe-area a {
     font-family: 'Hind Siliguri', sans-serif;
@@ -995,7 +999,10 @@ body {
 .menu-area ul li a i {
     padding-left: 10px;
 }
-
+.menu-area ul li ul li:last-child,
+.menu-area ul li ul li {
+    border: unset;
+}
 .menu-area ul li:before,
 .safe-area:before {
     background: #f07c29 none repeat scroll 0 0;
